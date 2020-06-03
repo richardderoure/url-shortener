@@ -4,13 +4,25 @@ body {
     align-items: center;
     flex-direction: column;
     font-family: 'Source Code Pro', monospace;
+    background-color: rgb(130, 155, 238)
   }
   
-  h1 {
-    color: #A4D3EE
-  }
+h1 {
+  color: rgb(0, 0, 0) 
+}
   
-  span {
-    color: #4A708B
-  }
+span {
+  color: #4A708B
+}
   
+#url{
+  height: 2em;
+  border-style: none;
+  border-radius: 0.5em;
+}
+
+#submit{
+  height: 2em;
+  border-style: none;
+  border-radius: 0.5em;
+}

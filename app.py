@@ -3,7 +3,7 @@ import sqlite3
 
 app = Flask(__name__)
 app.config['DATABASE'] = 'url_shortener.db'
-app.config['SECRET_KEY'] = ''
+app.config['SECRET_KEY'] = 'secret'
 
 # connect to database
 def connect_db():
@@ -53,8 +53,8 @@ def redirect_to(id):
 def home():
     return render_template('index.html', new_url="")
 
-@app.route('/newUrl', methods=['GET', 'POST'])
-def newUrl():
+@app.route('/new_url', methods=['GET', 'POST'])
+def new_url():
     if request.method == 'POST':
         url = request.form['url']
         db = get_db()
